@@ -27,3 +27,23 @@ def menu_utama():
             print(Fore.RED + 'Pilihan Salah!' + Style.RESET_ALL)
 os.system('cls')
 # akhir menu utama
+
+def login_admin():
+        ulang_dftr_menu = 'y'
+        while ulang_dftr_menu == 'y':
+            print('====== Login ======\n')
+            password = input('Password: ')
+            if password == '123':
+                os.system('cls')
+                print('Selamat Datang, Admin\n')
+                menu_login_admin()
+            else:
+                os.system('cls')
+                print(Fore.RED + 'Entry password invalid!' + Style.RESET_ALL)
+                ulang_dftr_menu = input('\nKembali ke Menu Utama [y/n]: ')
+                os.system('cls')
+                if ulang_dftr_menu == 'y':
+                    menu_utama()
+                else:
+                    login_admin()
+# akhir menu 1 login
