@@ -47,3 +47,44 @@ def login_admin():
                 else:
                     login_admin()
 # akhir menu 1 login
+
+def menu_mobil():
+    while True:
+        menu_daftar_mobil()
+        
+        pil_mobil= input('Pilih Mobil> ')
+        os.system('cls')
+        if pil_mobil == '0':
+            menu_utama()
+        elif pil_mobil == '1':
+            avanza()
+            input('Kembali [enter]> ')
+            os.system('cls')
+        elif pil_mobil == '2':
+            innova()
+            input('Kembali [enter]> ')
+            os.system('cls')
+        elif pil_mobil == '3':
+            hiace()
+            input('Kembali [enter]> ')
+            os.system('cls')
+        elif pil_mobil == '4':
+            elf()
+            input('Kembali [enter]> ')
+            os.system('cls')
+        elif pil_mobil == '5':
+            pajero()
+            input('Kembali [enter]> ')
+            os.system('cls')
+        elif pil_mobil == '6':
+            fortuner()
+            input('Kembali [enter]> ')
+            os.system('cls')
+        elif pil_mobil == '7':
+            alphard()
+            input('Kembali [enter]> ')
+            os.system('cls')
+        else:
+            print(Fore.RED + 'Pilihan Salah!' + Style.RESET_ALL)
+            menu_mobil()
+# akhir menu mobil
