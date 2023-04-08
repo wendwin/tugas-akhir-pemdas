@@ -88,3 +88,49 @@ def menu_mobil():
             print(Fore.RED + 'Pilihan Salah!' + Style.RESET_ALL)
             menu_mobil()
 # akhir menu mobil
+
+def rent():
+    # os.system('cls')
+    while True:
+        print('='*65)
+        print('Form Sewa Mobil'.center(65))
+        print('='*65)
+        try:
+            nama      = input('Nama                : ',)
+            no_hp     = input('No. Hp              : ')
+            alamat    = input('Alamat              : ')
+            list_mobil()
+            armada    = input('\nJenis Mobil         : ')
+            durasi    = input('Durasi Sewa (12/24) : ')
+            if armada == 'Avanza' or armada == 'avanza' or  armada == 'Innova' or armada == 'innova':
+                print(f'''Tipe Sewa:\nLepas Kunci\nPlus Sopir\nSopir + BBM
+                    ''')
+            else:
+                print('-Sopir + BBM')
+            tipe_sewa = input('Tipe Sewa           : ')
+            if durasi == '24':
+                inp_hari      = (input('Hari                : '))
+                hari = int(inp_hari)
+
+            if armada == 'Avanza' or armada == 'avanza':
+                mobil = mobil_avanza[0][1]
+                plat = mobil_avanza[0][8]
+                mobil_avanza.pop(0)
+                if durasi == '12' and tipe_sewa == 'Lepas Kunci' or tipe_sewa == 'lepas kunci':
+                    harga = mobil_avanza[0][2]
+                    total_harga = str(harga)
+                elif durasi == '24' and tipe_sewa == 'Lepas Kunci' or tipe_sewa == 'lepas kunci':
+                    harga = mobil_avanza[0][3] * hari
+                    total_harga = str(harga)
+                elif durasi == '12' and tipe_sewa == 'Plus Sopir' or tipe_sewa == 'plus sopir':
+                    harga = mobil_avanza[0][4]
+                    total_harga = str(harga)
+                elif durasi == '24' and tipe_sewa == 'Plus Sopir'  or tipe_sewa == 'plus sopir':
+                    harga = mobil_avanza[0][5] * hari
+                    total_harga = str(harga)
+                elif durasi == '12' and tipe_sewa == 'Sopir + BBM' or tipe_sewa == 'sopir + bbm':
+                    harga = mobil_avanza[0][6]
+                    total_harga = str(harga)
+                else:
+                    harga = mobil_avanza[0][7] * hari
+                    total_harga = str(harga)
