@@ -134,3 +134,26 @@ def rent():
                 else:
                     harga = mobil_avanza[0][7] * hari
                     total_harga = str(harga)
+                    
+            elif armada == 'Innova' or armada == 'innova':
+                mobil = mobil_innova[0][1]
+                plat = mobil_innova[0][8]
+                mobil_innova.pop(0)
+                if durasi == '12' and tipe_sewa == 'Lepas Kunci' or tipe_sewa == 'lepas kunci':
+                    harga = mobil_innova[0][2]
+                    total_harga = str(harga)
+                elif durasi == '24' and tipe_sewa == 'Lepas Kunci' or tipe_sewa == 'lepas kunci':
+                    harga = mobil_innova[0][3] * hari
+                    total_harga = str(harga)
+                elif durasi == '12' and tipe_sewa == 'Plus Sopir' or tipe_sewa == 'plus sopir':
+                    harga = mobil_innova[0][4]
+                    total_harga = str(harga)
+                elif durasi == '24' and tipe_sewa == 'Plus Sopir' or tipe_sewa == 'plus sopir':
+                    harga = mobil_innova[0][5] * hari
+                    total_harga = str(harga)
+                elif durasi == '12' and tipe_sewa == 'Sopir + BBM' or tipe_sewa == 'sopir + bbm':
+                    harga = mobil_innova[0][6]
+                    total_harga = str(harga)
+                else:
+                    harga = mobil_innova[0][7] * hari
+                    total_harga = str(harga)
