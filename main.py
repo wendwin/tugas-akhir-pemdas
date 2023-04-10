@@ -248,3 +248,35 @@ def rent():
             print(Fore.YELLOW + 'Isikan data dengan benar!' + Style.RESET_ALL)
 # akhir rent   
         
+
+def kembali():
+    input('\nKembali ke Menu [enter]')
+    os.system('cls')
+    menu_utama()                                                                                                    
+# akhir kemabli
+
+def data_pelanggan():
+    os.system('cls')
+    f = open("datarent.txt", "r")
+    print(f.read())
+    
+    kembali = input('Kembali > ')
+    if kembali == '':
+        os.system('cls')
+        menu_utama()
+# akhir data_pelanggan
+
+def menu_login_admin():
+    while True: 
+        menu_home_admin()
+
+        pilih_home = input('Pilih Menu > ')
+        if pilih_home == '1':
+            data_pelanggan()
+        elif pilih_home == '0':
+            os.system("cls")
+            menu_utama()
+        else:
+            os.system("cls")
+            print(Fore.RED + 'Pilihan Salah!' + Style.RESET_ALL)
+# akhir menu login
