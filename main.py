@@ -212,3 +212,39 @@ def rent():
                 else:
                     harga = mobil_alphard[0][3] * hari
                     total_harga = str(harga)
+
+            f = open("datarent.txt", "a")
+            f.write(hari_ini.strftime('%a, %b %d %Y %X') + '\n')
+            f.write('Nama           : '+ nama +'\n')
+            f.write('No Hp          : '+ no_hp +'\n')
+            f.write('Alamat         : '+ alamat +'\n\n')
+            f.write('Jenis Mobil    : '+ mobil +'\n')
+            f.write('Plat           : '+ plat +'\n')
+            f.write('Tipe Sewa      : '+ tipe_sewa +'\n')
+            f.write('Durasi         : '+ durasi +'\n')
+            if durasi == '24':
+                f.write('Hari           : '+ inp_hari +'\n')
+            f.write('Harga          : Rp. '+ total_harga +'\n')
+            f.write('----------------------------------------'+'\n\n')
+            f.close()
+            # f = open("datarent.txt", "r")
+            
+            yakin = input('\nYakin [y/n] > ')
+            if yakin == 'y':
+                os.system('cls')
+                print(Fore.GREEN + 'Pesanan Berhasil' + Style.RESET_ALL)
+                print(Fore.GREEN + 'TerimaKasih sudah menyewa di Oregeon Rent Car' + Style.RESET_ALL)
+
+                if durasi == '24':
+                    struk2(nama,alamat,armada,durasi,plat,tipe_sewa,inp_hari,harga)
+                    kembali()
+                else:
+                    struk1(nama,alamat,armada,durasi,plat,tipe_sewa,harga)
+                    kembali()
+            else:
+                continue
+        except Exception:
+            os.system('cls')
+            print(Fore.YELLOW + 'Isikan data dengan benar!' + Style.RESET_ALL)
+# akhir rent   
+        
