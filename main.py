@@ -156,4 +156,59 @@ def rent():
                     total_harga = str(harga)
                 else:
                     harga = mobil_innova[0][7] * hari
+                    total_harga = str(harga~)
+
+            elif armada == 'Hiace' or armada == 'hiace':
+                mobil = mobil_hiace[0][1]
+                plat = mobil_hiace[0][4]
+                mobil_hiace.pop(0)
+                if durasi == '12' and tipe_sewa == 'Sopir + BBM' or tipe_sewa == 'sopir + bbm':
+                    harga = mobil_hiace[0][2]
+                    total_harga = str(harga)
+                else:             
+                    harga = mobil_hiace[0][3] * hari
+                    total_harga = str(harga)
+
+            elif armada == 'Elf' or armada == 'elf':
+                mobil = mobil_elf[0][1]
+                plat = mobil_elf[0][4]
+                mobil_elf.pop(0)
+                if durasi == '12' and tipe_sewa == 'Sopir + BBM' or tipe_sewa == 'sopir + bbm':
+                    harga = mobil_elf[0][2]
+                    total_harga = str(harga)
+                else:
+                    harga = mobil_elf[0][3] * hari
+                    total_harga = str(harga)
+
+            elif armada == 'Pajero' or armada == 'pajero':
+                mobil = mobil_pajero[0][1]
+                plat = mobil_pajero[0][4]
+                mobil_pajero.pop(0)
+                if durasi == '12' and tipe_sewa == 'Sopir + BBM' or tipe_sewa == 'sopir + bbm':
+                    harga = mobil_pajero[0][2]
+                    total_harga = str(harga)
+                else:
+                    harga = mobil_pajero[0][3] * hari
+                    total_harga = str(harga)
+
+            elif armada == 'Fortuner' or armada == 'fortuner':
+                mobil = mobil_fortuner[0][1]
+                plat = mobil_fortuner[0][4]
+                mobil_fortuner.pop(0)
+                if durasi == '12' and tipe_sewa == 'Sopir + BBM' or tipe_sewa == 'sopir + bbm':
+                    harga = mobil_fortuner[0][2]
+                    total_harga = str(harga)
+                else:
+                    harga = mobil_fortuner[0][3] * hari
+                    total_harga = str(harga)
+
+            else:
+                mobil = mobil_alphard[0][1]
+                plat = mobil_alphard[0][4]
+                mobil_alphard.pop(0)
+                if durasi == '12' and tipe_sewa == 'Sopir + BBM' or tipe_sewa == 'sopir + bbm':
+                    harga = mobil_alphard[0][2]
+                    total_harga = str(harga)
+                else:
+                    harga = mobil_alphard[0][3] * hari
                     total_harga = str(harga)
