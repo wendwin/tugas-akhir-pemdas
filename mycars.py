@@ -68,3 +68,122 @@ mobil_alphard = [
     {1:'Alphard ',2:3250000,3:3500000,4:'AB 8291 AM'},
     {1:'Alphard ',2:3250000,3:3500000,4:'AB 2022 AT'}
 ]
+
+#info detail mobil 
+def avanza():
+    merek = 'Avanza'
+    harga_lk_12 = mobil_avanza[0][2]
+    harga_lk_24 = mobil_avanza[0][3]
+    harga_s_12  = mobil_avanza[0][4]
+    harga_s_24  = mobil_avanza[0][5]
+    harga_sb_12 = mobil_avanza[0][6]
+    harga_sb_24 = mobil_avanza[0][7]
+    tersedia    = len(mobil_avanza)
+    print(f'''
+        -----------------------------------------------------
+            Jenis Mobil                 : {merek}
+            Detail Harga                
+                         - Lepas Kunci  > {harga_lk_12:,} 12 Jam
+                                        > {harga_lk_24:,} Fullday
+                         - Plus Supir   > {harga_s_12:,} 12 Jam
+                                        > {harga_s_24:,} Fullday
+                         - Supir + BBM  > {harga_sb_12:,} 12 Jam
+                                        > {harga_sb_24:,} Fullday
+            Status                      : {tersedia} Tersedia
+        -----------------------------------------------------
+    ''')
+def innova():
+    merek = 'Innova'
+    harga_lk_12 = mobil_innova[0][2]
+    harga_lk_24 = mobil_innova[0][3]
+    harga_s_12  = mobil_innova[0][4]
+    harga_s_24  = mobil_innova[0][5]
+    harga_sb_12 = mobil_innova[0][6]
+    harga_sb_24 = mobil_innova[0][7]
+    tersedia    = len(mobil_innova)
+    print(f'''
+        -----------------------------------------------------
+            Jenis Mobil                 : {merek}
+            Detail Harga                
+                         - Lepas Kunci  > {harga_lk_12:,} 12 Jam
+                                        > {harga_lk_24:,} Fullday
+                         - Plus Supir   > {harga_s_12:,} 12 Jam
+                                        > {harga_s_24:,} Fullday
+                         - Supir + BBM  > {harga_sb_12:,} 12 Jam
+                                        > {harga_sb_24:,} Fullday
+            Status                      : {tersedia} Tersedia
+        -----------------------------------------------------
+    ''')
+def hiace():
+    merek = 'Hiace'
+    harga_sb_12 = mobil_hiace[0][2]
+    harga_sb_24 = mobil_hiace[0][3]
+    tersedia = len(mobil_hiace)
+    print(f'''
+        -----------------------------------------------------
+            Jenis Mobil                 : {merek}
+            Detail Harga               
+                         - Supir + BBM  > {harga_sb_12:,} 12 Jam
+                                        > {harga_sb_24:,} Fullday
+            Status                      : {tersedia} Tersedia
+        -----------------------------------------------------
+    ''')
+def elf():
+    merek = 'Elf'
+    harga_sb_12 = mobil_elf[0][2]
+    harga_sb_24 = mobil_elf[0][3]
+    tersedia = len(mobil_elf)
+    print(f'''
+        -----------------------------------------------------
+            Jenis Mobil                 : {merek}
+            Detail Harga               
+                         - Supir + BBM  > {harga_sb_12:,} 12 Jam
+                                        > {harga_sb_24:,} Fullday
+            Status                      : {tersedia} Tersedia
+        -----------------------------------------------------
+    ''')
+def pajero():
+    merek = 'Pajero'
+    harga_sb_12 = mobil_pajero[0][2]
+    harga_sb_24 = mobil_pajero[0][3]
+    tersedia = len(mobil_pajero)
+    print(f'''
+        -----------------------------------------------------
+            Jenis Mobil                 : {merek}
+            Detail Harga               
+                         - Supir + BBM  > {harga_sb_12:,} 12 Jam
+                                        > {harga_sb_24:,} Fullday
+
+            Status                      : {tersedia} Tersedia
+        -----------------------------------------------------
+    ''')
+def fortuner():
+    merek = 'Fortuner'
+    harga_sb_12 = mobil_fortuner[0][2]
+    harga_sb_24 = mobil_fortuner[0][3]
+    tersedia = len(mobil_fortuner)
+    print(f'''
+        -----------------------------------------------------
+            Jenis Mobil                 : {merek}
+            Detail Harga               
+                         - Supir + BBM  > {harga_sb_12:,} 12 Jam
+                                        > {harga_sb_24:,} Fullday
+
+            Status                      : {tersedia} Tersedia
+        -----------------------------------------------------
+    ''')
+def alphard():
+    merek = 'Alphard'
+    harga_sb_12 = mobil_alphard[0][2]
+    harga_sb_24 = mobil_alphard[0][3]
+    tersedia = len(mobil_alphard)
+    print(f'''
+        -----------------------------------------------------
+            Jenis Mobil                 : {merek}
+            Detail Harga               
+                         - Supir + BBM  > {harga_sb_12:,} 12 Jam
+                                        > {harga_sb_24:,} Fullday
+                                        
+            Status                      : {tersedia} Tersedia
+        -----------------------------------------------------
+''')
