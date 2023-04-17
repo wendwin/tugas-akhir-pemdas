@@ -1,3 +1,11 @@
+from main import menu_utama
+from colorama import Fore,Style
+import getpass
+import os
+
+data_username = []
+data_passw = []
+
 def menu_login():
     while True:
         print(f'''
@@ -49,3 +57,16 @@ def login():
              
         i = i + 1
 # akhir login
+
+def daftar():  
+    print('===== Daftar Akun =====')
+    username = input('Username    : ')
+    passw    = getpass.getpass('Password    : ')
+    data_username.append(username)
+    data_passw.append(passw)
+    
+    os.system('cls')
+    print(Fore.GREEN + 'Berhasil dibuat' + Style.RESET_ALL)
+    menu_login()
+
+menu_login()   
