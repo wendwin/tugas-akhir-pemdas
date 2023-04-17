@@ -1,5 +1,10 @@
+from mycars import avanza,innova,hiace,elf,pajero,fortuner,alphard
+from mycars import mobil_avanza,mobil_innova,mobil_hiace,mobil_elf,mobil_pajero,mobil_fortuner,mobil_alphard
+from mycars import menu_daftar_mobil,menu_home_admin,list_mobil,struk1,struk2
 from colorama import Fore,Style
 import os
+import datetime as dt
+hari_ini = dt.datetime.today()  
 
 def menu_utama():
     while True:
@@ -156,7 +161,7 @@ def rent():
                     total_harga = str(harga)
                 else:
                     harga = mobil_innova[0][7] * hari
-                    total_harga = str(harga~)
+                    total_harga = str(harga)
 
             elif armada == 'Hiace' or armada == 'hiace':
                 mobil = mobil_hiace[0][1]
