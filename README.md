@@ -8,4 +8,7 @@ Perulangan,
 Data structure,
 Read and write,
 Function,
-Exception Handling
+Exception Handling. 
+
+note: program dijalankan di bagian login.py dan data akan tersimpan di file datarent.txt
+
