@@ -1,3 +1,6 @@
+import datetime as dt
+hari_ini = dt.datetime.today() 
+
 mobil_avanza = [
     {1:'Avanza 01',2:275000,3:350000,4:400000,5:450000,6:550000,7:650000,8:'AB 6738 GE'},
     {1:'Avanza 02',2:275000,3:350000,4:400000,5:450000,6:550000,7:650000,8:'AB 4734 WT'},
@@ -218,3 +221,61 @@ def menu_home_admin():
         +---------------------------------------------------+
             '''
         )
+
+
+def list_mobil():
+    print(f'''
+Daftar Mobil: 
+Avanza
+Innova
+Hiace
+ELF
+Pajero
+Fortuner
+Alphard
+    ''')
+
+
+def struk1(nama,alamat,armada,durasi,plat,tipe_sewa,harga):
+     print(f'''
+------------------------------------------------------------
+                      Oregeon Rent Car                      
+                   Ruko Casa Grande No. 17                  
+           Jl. Ringroad Utara, 55283, Yogyakarta            
+------------------------------------------------------------
+      
+
+  {hari_ini.strftime('%c')}  
+                                     
+  Nama            : {nama}                                 
+  Alamat          : {alamat}                        
+
+  Jenis Mobil     : {armada}                               
+  Plat            : {plat}                                 
+  Tipe Sewa       : {tipe_sewa}                            
+  Durasi          : {durasi}                          
+  Total Harga     : Rp. {harga:,}                                                                        
+-------------------------------------------------------------''')
+
+def struk2(nama,alamat,armada,durasi,plat,tipe_sewa,inp_hari,harga):
+    print(f'''
+------------------------------------------------------------
+                      Oregeon Rent Car                      
+                   Ruko Casa Grande No. 17                  
+           Jl. Ringroad Utara, 55283, Yogyakarta            
+------------------------------------------------------------
+      
+
+  {hari_ini.strftime('%c')}  
+                                     
+  Nama            : {nama}                                 
+  Alamat          : {alamat}                        
+
+  Jenis Mobil     : {armada}                               
+  Plat            : {plat}                                 
+  Tipe Sewa       : {tipe_sewa}                            
+  Durasi          : {durasi}     
+  Hari            : {inp_hari}                       
+  Total Harga     : Rp. {harga:,}                                                                        
+-------------------------------------------------------------''') 
+
